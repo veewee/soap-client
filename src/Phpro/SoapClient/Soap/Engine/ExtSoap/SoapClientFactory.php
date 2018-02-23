@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpro\SoapClient\Soap;
+namespace Phpro\SoapClient\Soap\Engine\ExtSoap;
 
 use Phpro\SoapClient\Soap\ClassMap\ClassMapCollection;
 use Phpro\SoapClient\Soap\TypeConverter\TypeConverterCollection;

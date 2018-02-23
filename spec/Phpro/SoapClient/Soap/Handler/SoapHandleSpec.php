@@ -8,7 +8,7 @@ use Phpro\SoapClient\Soap\HttpBinding\SoapResponse;
 use Phpro\SoapClient\Soap\SoapClient;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
-use Phpro\SoapClient\Soap\Handler\SoapHandle;
+use Phpro\SoapClient\Soap\Handler\ExtSoapHandle;
 
 /**
  * Class SoapHandleSpec
@@ -22,7 +22,7 @@ class SoapHandleSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType(SoapHandle::class);
+        $this->shouldHaveType(ExtSoapHandle::class);
     }
 
     function it_is_a_soap_handler()

@@ -1,10 +1,10 @@
 <?php
 
-namespace Phpro\SoapClient\Soap;
+namespace Phpro\SoapClient\Soap\Engine\ExtSoap;
 
 use Phpro\SoapClient\Soap\Handler\HandlerInterface;
 use Phpro\SoapClient\Soap\Handler\LastRequestInfoCollectorInterface;
-use Phpro\SoapClient\Soap\Handler\SoapHandle;
+use Phpro\SoapClient\Soap\Handler\ExtSoapHandle;
 use Phpro\SoapClient\Soap\HttpBinding\LastRequestInfo;
 use Phpro\SoapClient\Soap\HttpBinding\SoapRequest;
 
@@ -67,7 +67,7 @@ class SoapClient extends \SoapClient
         parent::__construct($wsdl, $options);
 
         // Use the SoapHandle by default.
-        $this->handler = new SoapHandle($this);
+        $this->handler = new ExtSoapHandle($this);
         $this->options = $options;
     }
 

@@ -2,17 +2,17 @@
 
 namespace Phpro\SoapClient\Soap\Handler;
 
+use Phpro\SoapClient\Soap\Engine\ExtSoap\SoapClient;
 use Phpro\SoapClient\Soap\HttpBinding\LastRequestInfo;
 use Phpro\SoapClient\Soap\HttpBinding\SoapRequest;
 use Phpro\SoapClient\Soap\HttpBinding\SoapResponse;
-use Phpro\SoapClient\Soap\SoapClient;
 
 /**
  * Class SoapHandle
  *
  * @package Phpro\SoapClient\Soap\Handler
  */
-class SoapHandle implements HandlerInterface, LastRequestInfoCollectorInterface
+class ExtSoapHandle implements HandlerInterface, LastRequestInfoCollectorInterface
 {
     /**
      * @var SoapClient
